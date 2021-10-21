@@ -20,7 +20,10 @@ module.exports = {
     hot: true
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      react: path.resolve(__dirname, './node_modules/react')
+    }
   },
   module: {
     rules: [
